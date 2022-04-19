@@ -6,40 +6,88 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Introduce</title>
 
+        <!-- font : Open Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+
+        <!-- font : Mukta Mahee -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee&display=swap" rel="stylesheet" />
+
         <style>
             body {
                 margin: 0;
                 padding: 0;
             }
+            html,
+            body {
+                height: 100%;
+            }
+
+            p {
+                font-family: "Open Sans", sans-serif;
+
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            a {
+                text-decoration: none;
+            }
+            h1 {
+                font-family: "Mukta Mahee", sans-serif;
+                margin-top: 10px;
+
+                padding: 0;
+            }
+            h2 {
+                font-family: "Mukta Mahee", sans-serif;
+                font-size: 26px;
+                font-weight: normal;
+
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
             #profile {
                 width: 100%;
-                text-align: center;
+                height: 100%;
 
-                padding-top: 40px;
-                padding-bottom: 40px;
+                display: grid;
+                place-content: center;
+                text-align: center;
+                align-items: center;
+
+                margin-bottom: 200px;
+
+                background-color: #e0e0ff;
+            }
+            #profile-img-div {
+                width: 100%;
             }
             #profile-img {
                 border-radius: 70%;
+                border-style: solid;
+                border-width: 2px;
+                border-color: white;
 
-                width: 128px;
-                height: 128px;
+                max-width: 100px;
+                width: auto !important;
+                height: auto;
 
                 align-self: center;
             }
             #name {
                 width: 100%;
 
-                font-size: 42px;
+                font-size: 46px;
                 font-weight: bold;
                 margin-bottom: 10px;
             }
-            #job {
-                width: 100%;
-
-                font-size: 24px;
-                font-weight: normal;
-            }
             #social-media {
+                margin-top: 50px;
                 width: 100%;
             }
             #social-media img {
@@ -48,25 +96,55 @@
                 width: 32px;
                 height: 32px;
             }
-            a {
-                text-decoration: none;
+            #commit {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                text-align: center;
+
+                padding-top: 10px;
+                padding-bottom: 20px;
+                max-width: 100%;
+            }
+            #commit-graph {
+                max-width: 70%;
+                height: auto;
+            }
+            #identity {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                text-align: center;
             }
         </style>
     </head>
     <body>
         <div id="profile">
-            <img id="profile-img" src="img/profile-img.png" />
+            <div id="profile-img-div">
+                <img id="profile-img" src="img/profile-img.png" />
+            </div>
             <h1 id="name">Jisung Lim</h1>
             <h2 id="job">High School Student</h2>
-            <p>url</p>
+
             <div id="social-media">
-                <a href="https://github.com/jslim0602w">
-                    <img id="github" src="img/github.png" />
-                </a>
-                <a href="https://www.acmicpc.net/user/jslim0602">
-                    <img id="boj" src="img/boj.png" />
-                </a>
+                <p>url</p>
+                <div>
+                    <a href="https://github.com/jslim0602w">
+                        <img id="github" src="img/github.png" />
+                    </a>
+                    <a href="https://www.acmicpc.net/user/jslim0602">
+                        <img id="boj" src="img/boj.png" />
+                    </a>
+                </div>
             </div>
+        </div>
+
+        <div id="commit">
+            <h2>Github Commit</h2>
+            <p>Jisung's Github commit graph</p>
+            <img id="commit-graph" src="https://ghchart.rshah.org/jslim0602w" />
+        </div>
+
+        <div id="identity">
+            <h2>My identity</h2>
         </div>
     </body>
 </html>

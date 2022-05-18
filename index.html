@@ -73,7 +73,7 @@
                 border-width: 2px;
                 border-color: white;
 
-                max-width: 100px;
+                max-width: 128px;
                 width: auto !important;
                 height: auto;
 
@@ -109,10 +109,25 @@
                 max-width: 70%;
                 height: auto;
             }
-            #identity {
+            #subject {
                 margin-top: 40px;
                 margin-bottom: 40px;
                 text-align: center;
+            }
+            #programming-languages {
+                width: 100%;
+                height: 200px;
+                text-align: center;
+
+                background-color: bisque;
+            }
+            .lang {
+                padding: 10px;
+                float: left;
+            }
+            .lang img {
+                width: 64px;
+                height: 64px;
             }
         </style>
     </head>
@@ -138,13 +153,37 @@
         </div>
 
         <div id="commit">
-            <h2>Github Commit</h2>
+            <h2>Commit and badges</h2>
             <p>Jisung's Github commit graph</p>
             <img id="commit-graph" src="https://ghchart.rshah.org/jslim0602w" />
+            <p>Jisung's BOJ badge</p>
+            <a href="https://solved.ac/jslim0602"
+                ><img
+                    src="http://mazassumnida.wtf/api/v2/generate_badge?boj=jslim0602"
+                    alt="Solved.ac
+                프로필"
+            /></a>
         </div>
 
-        <div id="identity">
-            <h2>My identity</h2>
+        <div id="subject">
+            <h2>Programming language</h2>
+            <div id="programming-languages">
+                <div class="lang">
+                    <h2>Python</h2>
+                    <img id="python-logo" src="./img/python-logo.png" />
+                    <p>My major coding language</p>
+                </div>
+                <div class="lang">
+                    <h2>Java Script</h2>
+                    <img id="js-logo" src="./img/js-logo.png" />
+                    <p>Studing to coding Web page</p>
+                </div>
+                <div class="lang">
+                    <h2>Swift</h2>
+                    <img id="swift-logo" src="./img/swift-logo.png" />
+                    <p>Studing to programming Apple UI</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>
